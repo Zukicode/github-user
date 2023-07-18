@@ -1,0 +1,38 @@
+.dashboard {
+	width: 100%;
+	padding: 15px 20px;
+	background-color: var(--dark);
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@media (max-width: 400px) {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.blockDash {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		cursor: pointer;
+		transition: all 0.4s;
+
+		&:hover {
+			transition: all 0.2s;
+			opacity: 0.5;
+		}
+
+		p {
+			color: var(--second-gray);
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+
+		h1 {
+			color: var(--white);
+			font-size: 21px;
+		}
+	}
+}

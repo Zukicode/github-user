@@ -1,0 +1,46 @@
+.description {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+
+	@media (max-width: 400px) {
+		grid-template-columns: 1fr;
+		place-items: center;
+	}
+
+	.descriptionBlock {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&.nonactive {
+			.icon {
+				svg {
+					fill: var(--second-gray);
+				}
+			}
+
+			.content {
+				color: var(--second-gray);
+			}
+		}
+
+		.icon {
+			position: relative;
+			top: 2px;
+
+			svg {
+				width: 23px;
+				height: 23px;
+				fill: var(--white);
+			}
+		}
+
+		.content {
+			color: var(--white);
+			letter-spacing: 1.5px;
+			font-size: 14px;
+		}
+	}
+}

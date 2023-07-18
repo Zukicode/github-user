@@ -1,0 +1,22 @@
+.header {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+
+	.logo {
+		svg {
+			width: 50px;
+			fill: var(--white);
+		}
+	}
+
+	.title {
+		font-size: 36px;
+		color: var(--white);
+		letter-spacing: -1px;
+		text-transform: uppercase;
+	}
+}

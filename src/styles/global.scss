@@ -1,0 +1,27 @@
+@use '_normalize.scss';
+@use '_variables.scss';
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: var(--dark);
+}
+
+div,
+span,
+input,
+button {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primary);
+	border-radius: 10px;
+}
